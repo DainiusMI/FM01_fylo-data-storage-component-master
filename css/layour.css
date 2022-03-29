@@ -1,0 +1,100 @@
+
+
+/*  mobile  */
+
+@media (max-width: 375px) {
+    body {  
+        background-image: url(../images/bg-mobile.png);
+
+    }
+    .content-area {
+        width: 300px;        
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;  
+    }
+    .container-logo {
+        min-height: 12rem;
+        width: 100%; 
+    }   
+    .container-bar {
+        width: 100%;
+    }
+    .row-3 { margin-bottom: 1rem;}
+    .notification-bar {
+        padding: .5rem .5rem;
+    }
+    .row-4 {
+        position: absolute;
+        bottom: -2rem;
+        left: 50%;
+    }
+    .triangle {
+        display: none;
+    }
+}
+
+
+
+/*  desktop  */
+
+@media (min-width: 375px) {
+    
+    body {        
+        background-image: url(../images/bg-desktop.png);
+        background-position: left bottom;
+        background-size: 100% 50%;
+    }
+    .content-area {width: 70%;} 
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 2rem; 
+       
+        
+    }
+    .container-logo {
+        min-height: 10rem;
+        width: 300px;
+        
+    }
+    .icon-row {
+        padding-bottom: 2rem;
+    }
+    .container-bar {
+        height: 80%;
+        width: 60%;
+        justify-content: center;       
+          
+    }
+    .container-bar .row-1 {       
+        justify-content: flex-start;        
+    }
+
+    .row-4 {
+        position: absolute;
+        top: -2rem;
+        right: -2rem;            
+    }
+    .notification-bar {
+        padding: .1rem .6rem; 
+    }
+    .triangle {   
+        position: absolute;
+        right: 0;
+        top: 1.2rem;
+        height: 0;
+        width: 0;
+        border-top: 1.5rem solid transparent;
+        border-bottom: 1.5rem solid transparent;
+        border-right: 1.5rem solid  white;       
+    }
+
+    
+    
+
+}
